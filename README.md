@@ -1,10 +1,12 @@
+#Gmail Autofilter
+
 Proof of concept automatic filtering of gmail messages. This is Chrome extension code, for testing follow instruction from: 
 
 https://developer.chrome.com/extensions/getstarted#unpacked
 
 To be sure it works check your javascript console for 'Hello, <user>' and 'Filters set!' messages.
 
-What does it do: upon seeing a new message in user's inbox it will check its content for specified keyword; if keyword is present, a new filter is created adding a specified label and archiving further messages with the same keyword.
+What does it do: upon seeing a new message in user's inbox it will check its content for specified keyword (main.js, at the beginning); if the keyword is present, a new filter is created adding a specified label and archiving further messages with the same keyword.
 
 How this works: it is meant for testing and research purposes; manifest and content.js are crafted in sole purpose of injecting other scripts and allowing them to work in gmail environment. The customizable code resides in main.js. In particular, at the beginning of main.js there are hardcoded values for both keyword and label to apply.
 
